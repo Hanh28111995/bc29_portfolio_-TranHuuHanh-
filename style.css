@@ -1,0 +1,315 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body,html
+{
+    font-family:Hind,sans-serif;color:#212529;line-height:1.5;background-color:#fff
+}
+.navbar-brand
+{
+    align-items: center;
+}
+.navbar-brand span
+{
+color: white;
+font-size: 40px !important;
+justify-content: space-between;
+}
+.navbar-brand i
+{
+    color:#35a22c;
+}
+.navbar-brand span
+{
+    font-size: 30px;
+}
+.navbar-nav .nav-item
+{
+    margin: 0 10px;
+}
+.navbar-nav .nav-item::after
+{
+    content: "";
+    width: 0;
+    display: block;
+    height: 5px;
+    background-color:#35a22c;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-item.active::after
+{
+    width: 100%;
+}
+.navbar-nav .nav-item:hover::after
+{
+    width: 100%;
+}
+.navbar-nav .nav-item.active a
+{
+    color: #35a22c !important;
+}
+.navbar-nav .nav-item a:hover
+{
+    color: #35a22c !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.carousel-item
+{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(1)
+{
+    background-image: url("./image/finland.jpg");
+}
+.carousel-item:nth-child(2)
+{
+    background-image: url("./image/mountains.jpg");
+}
+.carousel-item:nth-child(3)
+{
+    background-image: url("./image/mountains-1.jpg");
+}
+.carousel-item .img_thumb
+{
+    width: 150px;
+    margin:  auto;
+}
+
+/* .carousel-item img {
+    width: 100%;
+    border-radius: 50%;
+} */
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption h5 
+{
+    font-size: 4vw;
+    line-height: 5vw
+}
+.carousel-caption p
+{
+    font-size: 2vw;
+}
+
+header
+{
+position: absolute;
+z-index: 1;
+left: 50%;
+transform: translateX(-50%);
+}
+.carousel-indicators li
+{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+.carousel-indicators li.active
+{
+    background-color: #35a22c;
+}
+/* .project_content
+{
+    width: 100%;
+} */
+
+/* #project
+{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+} */
+.project_title, .feature_title
+{
+    max-width: 750px;
+}
+.project_title h1
+{
+    font-size: 36px;
+    line-height: 42px;
+    color: black;
+    font-weight:  600;
+}
+.project_title p
+{
+    /* font-size: 12px; */
+    line-height: 24px;
+    margin:1rem auto;
+    color: #585858;
+}
+.nav-pills .nav-item .nav-link
+{
+    color: black;
+    border: black solid 1px;
+    margin: 0 5px;
+}
+.nav-pills .nav-item .nav-link.active
+{
+ background-color: #35a22c;
+ color: white;
+ border-color: #35a22c;
+}
+.tab-content 
+{
+    margin-top: 20px;
+}
+.pj_item
+{
+    margin-top: 30px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgb(0 0 0/13%);
+    border: none;
+    cursor: pointer;
+}
+.pj_item p{
+    color: #585858;
+}
+.pj_item h4{
+    font-size: 1.25rem;
+    color: black;
+    transition: all 0.5s;
+}
+.pj_item:hover h4{
+    color: #35a22c;
+}
+.pj_item .card-body
+{
+    border: 1px solid transparent;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
+}
+.pj_item:hover .card-body
+{
+    border-color: #35a22c;
+    border-top-color:transparent ;
+}
+.feature
+{
+    background: url("./image/3.jpg") no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+    padding:  100px 0 120px 0;
+    position: relative;
+}  
+.feature_overlay
+{
+    background: rgba(7, 10, 12, 0.72);
+     position: absolute; 
+     top:0; 
+     right:0;
+     width: 100%;
+     height: 100%;
+} 
+.feature_title h3
+{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+    color: white;
+}
+.feature_title p
+{
+color: white;
+margin: 1rem auto;
+line-height: 24px;
+}
+.feature_item {
+    padding: 40px 40px;
+    transition: .3s;
+    border-radius: 10px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
+    transition: all .5s;
+}
+.feature_item i
+{
+font-size:48px;
+color:#35a22c;
+}
+.feature_item h3
+{
+    font-size:20px;
+    color:#ffff ;
+    line-height:30px;padding-top:25px;font-weight:800;
+}
+.feature_item:hover
+{
+    background:#000;
+    border-color:#fff;
+}
+.Achievement
+{
+    background-image: url(./image/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    width: 100%;
+    position: relative;
+}
+.Achievement_overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.5);
+    position: absolute;
+    top: 0; left: 0;
+}
+.Achievement_left
+{
+    background: rgba(255,255,255,.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    padding: 45px;
+}
+.Achievement_right
+{
+    background: rgba(255,255,255,0);
+    border-radius: 10px;
+    padding-top: 45px ;
+}
+.footer_main i
+{
+    width:42px;
+    height:42px;
+    line-height:42px;
+    border-radius:50%;
+    border:1px solid #585858;
+    transition:all .5s;
+    color: #585858;
+}
+.footer_main i:hover
+{
+border-color:#35a22c;
+color:#35a22c;
+}
+.footer_main a
+{
+    margin-right:10px
+}
+.footer__main a:last-child
+{margin-right:0}
+.footer_info
+{
+    border-top:1px solid #454545;
+    padding-top:30px;
+    margin-top:30px;
+}
+.footer_info p, .footer_info p a
+{
+    color: #585858;
+}
+.footer_info p a:hover 
+{
+    color:#35a22c;
+    text-decoration: none;
+}
